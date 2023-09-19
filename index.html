@@ -5,13 +5,18 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Weather App</title>
+   <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
    <section id="outerContainer" >
       <div id="searchContainer" >
          <input type="text" id="searchField" placeholder="Enter City Name" >
-         <button>FIND</button>
+         <button onclick="findBtnOnClicked()" >FIND</button>
+         <h1 id="cityName" ></h1>
       </div>
+      
    </section>
+
+   <script src="./scripts/script.js"></script>
 </body>
 </html>
