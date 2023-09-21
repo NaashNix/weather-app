@@ -1,0 +1,1 @@
+Hello There! I'm XmlHttpRequest Object!
