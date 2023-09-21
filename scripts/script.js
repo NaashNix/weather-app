@@ -1,18 +1,11 @@
 function searchBtnOnClick(){
-   const httpReq = new XMLHttpRequest();
-
-   httpReq.open("GET","db/db.txt");
    
-   httpReq.send();
-   
-   // If ReadystateValue == 4 
-   httpReq.onreadystatechange = () => {
-      if(httpReq.readyState == 4 ){
-         console.log(httpReq.responseText);
+   $.ajax({
+      method : "GET",
+      url : "db/db.txt",
+      success : (resp) => {
+         console.log(resp);
       }
-   }
-   console.log(httpReq.responseText);
+   });
    
-
-
 }
