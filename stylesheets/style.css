@@ -1,12 +1,68 @@
-#outerContainer{
-   position: relative;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
 
-#searchContainer{
-   position: absolute;
-   left: 0;
-   right: 0;
-   margin: 2rem auto;
-   width: fit-content;
-
-}
+  .searchBox {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .searchTxt {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .searchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .searchBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .section1 {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .section1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .table_weather {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .table_weather tr {
+    margin-bottom: 10px;
+  }
+  
+  .table_weather td {
+    padding: 5px 0;
+  }
