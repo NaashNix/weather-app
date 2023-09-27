@@ -66,3 +66,7 @@
   .table_weather td {
     padding: 5px 0;
   }
+
+  #map{
+    height: 180px;
+  }
