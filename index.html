@@ -46,9 +46,22 @@
          </table>
 
          <div id="map">
-            
+
          </div>
 
+   </section>
+
+   <section id="forecastDisplay" >
+      <div id="dayOne" >
+            <span>DAY01 Wind</span>
+            <span id="dayOneWind"></span>
+      </div>
+
+      <div id="dayTwo">
+         <span>DAY02 Wind</span>
+         <span id="dayTwoWind"></span>
+      </div>
+      <button onclick="getWeatherForecast()" >Get Forecast</button>
    </section>
 
    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

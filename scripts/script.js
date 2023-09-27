@@ -4,6 +4,7 @@ const locationName = $("#locationName");
 const successCallBack = (position) => {
    console.log(position);
    setLocationInMap(position.coords.latitude,position.coords.longitude);
+   getWeatherForecast(position.coords.latitude, position.coords.longitude)
 };
 
 const errorCallBack = (error) => {
@@ -48,3 +49,34 @@ function setLocationInMap(lng,ltd){
    marker.setLatLng([lng, ltd]).update();
    map.setView([lng, ltd], 15);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// Get Forecast from the WeatherAPI
+function getWeatherForecast(ltd,lng) {
+   $.ajax({
+      url: `http://api.weatherapi.com/v1/forecast.json?key=a393728118084352b3571035231005&q=${ltd},${lng}&days=5`,
+      method : "GET",
+      success: function (response) {
+         console.log(response.location.name);
+      }
+   });
+}
+
+
+
+
+

@@ -70,3 +70,17 @@
   #map{
     height: 180px;
   }
+
+#forecastDisplay{
+  margin-left: 2rem;
+}
+
+#dayOne span{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+#dayTwo span{
+  font-size: 2rem;
+  margin: 1rem;
+}
